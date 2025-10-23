@@ -1,0 +1,32 @@
+name: kids_tutorial_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/splash.png
+    - assets/searchBg.png
+    - assets/iconBgNew.png
+    - assets/boy1.png
+    - assets/boy1Big.png
+    - assets/girl (1).png
+    - assets/boy2.png
+    - assets/parker_audio.mp3
+    - assets/smith_audio.mp3
+    - assets/leena_audio.mp3
