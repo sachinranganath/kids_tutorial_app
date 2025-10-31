@@ -1,0 +1,17 @@
+name: Publish to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.cicd.outputs.page-url }}
+    steps:
+      - uses: g1j0shi/flutter-web-app-deployment@main
+        id: cicd
